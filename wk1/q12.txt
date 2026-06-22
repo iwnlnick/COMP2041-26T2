@@ -1,0 +1,37 @@
+Constant length = Strings only ever match one fixed length
+Match = The string that is matched based on the pattern. Not the whole line.
+
+Perl
+- N matches =
+- Shortest match =
+- Longest match = 
+- Students examples of matches:
+
+Pe*r*l
+- N matches =
+- Shortest match =
+- Longest match = 
+- Students examples of matches:
+Pl
+Pel
+Peeeeeeeeeeeeee....l
+
+Full-stop.
+- N matches =
+- Shortest match =
+- Longest match = 
+- Students examples of matches:
+
+
+[1-9][0-9][0-9][0-9]
+- N matches = 9000
+- Shortest match =
+- Longest match = 
+- Students examples of matches:
+1000-9999
+
+I (love|hate) programming in (Perl|Python) and (Java|C)
+- N matches =
+- Shortest match =
+- Longest match = 
+- Students examples of matches:

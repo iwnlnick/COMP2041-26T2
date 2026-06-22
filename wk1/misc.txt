@@ -1,0 +1,97 @@
+/* ============================================================
+   SECTION 1 & 2: C preprocessor commands vs normal lines
+   ============================================================ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 100
+#define MIN 0
+#ifdef DEBUG
+#define LOG(x) printf(x)
+#endif
+#ifndef RELEASE
+#undef LOG
+#endif
+
+int main() {
+    int x = 5;
+    return 0;
+}
+
+void foo() {
+    int y = MAX;
+}
+
+/* ============================================================
+   SECTION 3: Lines with trailing whitespace
+   ============================================================ */
+
+// Note that I have an extension that highlights red if trailing whitespace is present
+
+int a = 1;   
+void bar() {}   
+#include <math.h>
+return 0;	
+char c = 'z';
+int b = 2;     
+
+/* ============================================================
+   SECTION 4: Names Barry, Harry, Larry, Parry
+   ============================================================ */
+
+Barry went to the store.
+Harry and Larry met Parry at noon.
+Gary and Mary were not invited.
+Parry passed the ball to Barry.
+Larry told Harry to leave.
+
+/* ============================================================
+   SECTION 5: "hello" followed later by "world"
+   ============================================================ */
+
+hello there, how are you doing in this wide world
+helloworld
+hello, said the man, gesturing at the world
+this line has world before hello
+goodbye world
+hello there
+
+/* ============================================================
+   SECTION 6: "calendar" and mis-spellings (a <-> e swaps)
+   ============================================================ */
+
+calendar
+celender
+calandar
+celendar
+calender
+celander
+the word is calendar, not calender or celendar
+check your celander for the meeting
+
+/* ============================================================
+   SECTION 7: Non-negative integers separated by commas
+   ============================================================ */
+
+2,4,8,16,32
+0,1,2,3
+100,200,300
+1,2,3,
+,1,2,3
+1,,2
+-1,2,3
+42
+
+// Section 8
+
+"hello\n"
+"foo bar\n"
+"hello world"
+"line one\nline two\n"
+"no newline at end"
+"\n"
+"another\nwith embedded\nnewlines\n"
+"almost\n but not"
+
+
+hi # 
